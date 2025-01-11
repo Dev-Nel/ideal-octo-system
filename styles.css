@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, hsla(279, 58%, 72%, 1) 0%, hsla(318, 47%, 67%, 1) 100%);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.container {
+    width: 80%;
+    border-radius-top:20px;
+    border-radius-top:20px;
+    border-radius-top:20px;
+    border-radius-top:20px;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #9796f0 #fbc7d4 3px solid;
+}
+header a {
+    font-family: Space-Mono, Inter, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.main {
+    padding: 20px;
+    background:#8854d0;
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Space-Mono, Inter, sans-serif;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group button {
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background: #555;
+}
+.auction-list {
+    margin-top: 20px;
+}
+.auction-item {
+    background: #805D93;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: #805D93 1px solid;
+}
+
+.hehehe {
+    border-radius:20px;
+}
+
+#language {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    border: none;
+}

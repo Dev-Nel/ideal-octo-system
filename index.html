@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="form-group">
+                <label for="language">Language:</label>
+                <select id="language" onchange="toggleLanguage()">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+
+            <h2 data-i18n="addUser">Add User</h2>
+            <div class="form-group">
+                <label for="username" data-i18n="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <button class="hehehe" onclick="addUser()" data-i18n="addUser">Add User</button>
+            </div>
+
+            <h2 data-i18n="auction">Auction</h2>
+            <div class="form-group">
+                <label for="item" data-i18n="item">Item:</label>
+                <select id="item" name="item" onchange="updateItemImage()">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="carrot">Carrot</option>
+                    <option value="iphone">Iphone</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div id="apple-image" class="item-image" style="display:none;">
+                    <img src="srj.ong" alt="Apple" style="width:100px;height:100px;">
+                </div>
+                <div id="banana-image" class="item-image" style="display:none;">
+                    <img src="0.png" alt="Banana" style="width:100px;height:100px;">
+                </div>
+                <div id="carrot-image" class="item-image" style="display:none;">
+                    <img src="yheti.png" alt="Carrot" style="width:100px;height:100px;">
+                </div>
+                <div id="iphone-image" class="item-image" style="display:none;">
+                    <img src="iphone.png" alt="Iphone" style="width:100px;height:100px;">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bid" data-i18n="bid">Bid Amount:</label>
+                <input type="number" id="bid" name="bid">
+            </div>
+            <div class="form-group">
+                <button class="hehehe" onclick="placeBid()">Place Bid</button>
+            </div>
+
+            <div class="auction-list" id="auction-list">
+                <!-- Auction items will be listed here -->
+            </div>
+
+            <div id="winner" style="display:none; margin-top: 20px;">
+                <h2 data-i18n="winner">Winner</h2>
+                <p id="winner-name"></p>
+                <img id="winner-gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTZvYWw2aGJsMzhpZ2F3aWZxY21mNW56NDBnb2RrN28zcHAwaDV6cSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/12QvwmuIlfRJyb0vrs/giphy.gif" alt="Winner GIF" style="width:200px;height:200px;">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
